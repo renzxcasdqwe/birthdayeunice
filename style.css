@@ -571,6 +571,71 @@ button:hover,
   }
 }
 
+@media (min-width: 521px) and (max-width: 1024px) {
+  .birthday-book::before {
+    top: -13px;
+    left: 22px;
+    right: 22px;
+    bottom: auto;
+    width: auto;
+    height: 28px;
+    border-radius: 999px;
+    background:
+      repeating-linear-gradient(
+        to right,
+        transparent 0,
+        transparent 18px,
+        rgba(255, 255, 255, 0.75) 19px,
+        rgba(255, 255, 255, 0.75) 25px,
+        transparent 26px,
+        transparent 42px
+      ),
+      linear-gradient(to bottom, #31185f, #ffdc8f, #5d348d, #241042);
+    z-index: 6;
+  }
+
+  .book-cover {
+    transform-origin: top center;
+  }
+
+  .birthday-book.is-open .book-cover {
+    transform: rotateX(158deg);
+    box-shadow: 0 34px 70px rgba(45, 21, 89, 0.34);
+  }
+
+  .book-cover::before {
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(20, 10, 39, 0.62),
+        transparent 18%,
+        transparent 82%,
+        rgba(255, 255, 255, 0.16)
+      ),
+      linear-gradient(to top, rgba(34, 14, 66, 0.62), transparent 48%);
+  }
+
+  .book-page::before {
+    top: 24px;
+    left: 24px;
+    right: 24px;
+    bottom: auto;
+    width: auto;
+    height: 12px;
+    border-radius: 999px;
+    background: linear-gradient(
+      to bottom,
+      rgba(75, 38, 100, 0.28),
+      rgba(255, 255, 255, 0.55),
+      transparent
+    );
+  }
+
+  .book-page {
+    padding-top: 54px;
+  }
+}
+
 @media (max-width: 520px) {
   .page {
     padding: 14px;
